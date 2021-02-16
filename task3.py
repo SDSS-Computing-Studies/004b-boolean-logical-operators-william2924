@@ -15,3 +15,16 @@ example:
 Enter a number: -3
 -3 is not a positive integer
 """
+import math
+number = input()
+n = False
+f = False
+integer_part = round(float(number))
+if number[0] == '-':
+    n = True
+if float(number) - integer_part != 0:
+    f = True
+if not n and  not f:
+    print(str(number) + " is a positive integer.")
+else:
+    print(str(number) + " is not a positive integer.")
